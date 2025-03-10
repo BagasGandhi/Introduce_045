@@ -6,6 +6,7 @@ float luas, panjang, lebar; //var global
 void inputData(){
     cout << "Masukkan panjangnya:";
     cin >> panjang;
+
     cout << "Masukkan lebarnya:"; 
     cin >> lebar;
 }
@@ -28,6 +29,7 @@ void tampilkanLuas()
 int main()
 {
     inputData();
-    hitungLuas();
-    tampilkanLuas();
+   // hitungLuas();
+   hitungLuasBerparameter(panjang,lebar);
+   tampilkanLuas();
 }
